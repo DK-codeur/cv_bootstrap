@@ -1,0 +1,445 @@
+/*General*/
+*
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+h1,h2,h3,h4,h5,h6
+    {
+        font-weight: bold;
+    }
+
+section
+    {
+        padding: 45px 0px 70px;
+    }
+
+/*Navbar*/
+.navbar
+    {
+        background-color: #008af2;
+        font-size: 14px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        padding: 0px;
+        border-bottom: 1.4px white solid;
+    }
+
+.navbar .navbar-collapse
+    {
+        text-align: center;
+    }
+
+#my-navbar
+    {
+        justify-content: center;
+    }
+
+#my-navbar li
+    {
+        margin-right: 15px;
+        margin-left: 5px;
+        line-height: 40px;
+    }
+
+#my-navbar li a
+    {
+        text-decoration: none;
+        color: white !important;
+        display: inline-block;
+    }
+
+#my-navbar li a:hover
+    {
+        color: #008af2 !important;
+        background-color: white;
+    }
+
+/*navbar-toggle*/
+.navbar-toggler
+    {
+        border-style: none;
+    }
+
+/*About*/
+#about
+    {
+        padding: 100px;
+        background: #008af2;
+    }
+
+.profile-pic
+    {
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+    }
+
+#about .heading
+    {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+#about .heading h1
+    {
+        color: white;
+    }
+
+#about .heading h3
+    {
+        color: rgb(53, 50, 50);
+    }
+
+.boouton-cv
+    {
+        border: 1px white solid;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 10px;
+        transition: all 0.4s ease-in 0s;
+    }
+
+.boouton-cv:hover
+    {
+        background-color: white;
+        color: #008af2;
+    }
+
+    /*Skills*/
+#skills
+    {
+        background-color: white;
+    }
+
+#skills .heading h2
+    {
+        color: #008af2;
+        text-align: center;
+        margin: 15px 0px 30px 0px;
+    }
+
+#skills .progress
+    {
+        margin-bottom: 5%;
+        height: 20%;
+    }
+
+#skills .progress h6
+    {
+        text-shadow: 1px 1px 1px black;
+        margin: 0px;
+    }
+
+#skills .progress-bar
+    {
+        background-color: #008af2;
+    }
+
+.blue-divider
+    {
+        width: 100px;
+        height: 2px;
+        background-color: #008af2;
+        margin: 0px auto;
+    }
+
+/*experience*/
+#experience
+    {
+        background-color: #008af2;
+    }
+
+#experience .heading h2
+    {
+        color: white;
+        margin:  25px 0px 30px 0px; 
+        text-align: center;
+    }
+
+
+.white-divider
+    {
+        width: 100px;
+        height: 2px;
+        background-color: white;
+        margin: 10px auto;
+    }
+
+/*Timeline*/
+.timeline
+    {
+        padding: 30px 10px;
+        position: relative;
+    }
+
+.timeline-heading h3
+    {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+.timeline-heading h4
+    {
+        color: #008af2;
+    }
+
+.timeline::before
+    {
+        content: " "; /*pr voir le psdo elml on pourait un width et bg color*/
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        width: 5px;
+        background-color: rgb(37, 36, 36);
+        left: 50%;
+        margin-left: -2.5px;
+    }
+
+.timeline .timeline-element
+    {
+        margin-bottom: 20px;
+        position: relative; 
+    }
+
+.timeline .timeline-element::after
+    {
+        clear: both; /*a cause des float*/
+    }
+
+.timeline .timeline-element::before, .timeline .timeline-element::after
+    {
+        content: " ";
+        display: table;
+    }
+
+/* time line badge*/
+.timeline  .timeline-badge
+    {
+        position: absolute;
+        left: 50%;
+        color: #008af2;
+        background-color: rgb(245, 242, 242);
+        width: 40px; /* a contré*/
+        margin-left: -20px; /* contrari: width="40px" permet de centre l'elmt avec son left=50% */
+        line-height: 40px; /*not height bcse glyph*/
+        font-size: 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+/*timeline panel container*/
+.timeline-panel-container
+    {
+        width: 50%;
+        float: left;
+    }
+
+.timeline-panel-container-inverted
+    {
+        width: 50%;
+        float: right;
+    }
+
+/*timeline panel*/
+.timeline-panel
+    {
+        background-color: white;
+        padding: 10px 25px;
+        margin-right: 40px;
+        width: 90%;
+        border: 1px #d4d4d4 solid;
+        border-radius: 7px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        float: right;
+        position: relative; 
+    }
+
+.timeline-panel-container-inverted .timeline-panel /*tt les timeline panel float right mais lui il est inv.*/
+    {
+        float: left;
+        margin-left: 40px;
+    }
+
+/*ptit triangle*/
+.timeline-panel::after
+    {
+        content: " ";
+        position: absolute;
+        display: inline-block;
+        top: 10px;
+        right: -14px;
+        border-top: 14px transparent solid;
+        border-left: 14px white solid;
+        border-right: 0px white solid;
+        border-bottom: 14px transparent solid; 
+
+    }
+
+.timeline-panel-container-inverted .timeline-panel::after
+    {
+        left: -14px;
+        border-right: 14px white solid;
+        border-left: 0px white solid;
+        right: auto;
+    }
+
+/*Education*/
+#education
+    {
+        background-color: white;
+    }
+
+#education .heading h2
+    {
+        color: #008af2;
+        text-align: center;
+        padding: 20px;
+    }
+
+.education-bloc
+    {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: #ddd;
+        border: 2px #ccc solid;
+        border-radius: 10px;
+    }
+
+.education-bloc h5
+    {
+        color: #888;
+        font-size: 15px;
+        margin-bottom: 15px; 
+    }
+
+.education-bloc .fa
+    {
+        font-size: 30px;
+    }
+
+.education-bloc h3
+    {
+        padding-top: 10px;
+        color: #008af2;
+    }
+
+.education-bloc h4
+    {
+        margin-bottom: 20px;
+    }
+
+.education-bloc .blue-divider
+    {
+        margin-bottom: 20px;
+    }
+
+/*Portfolio*/
+
+#portfolio
+    {
+        background-color: #008af2;
+    }
+
+#portfolio .heading h2
+    {
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+.col-md-4
+    {
+        margin-bottom: 15px;
+    }
+
+    /*img BN*/
+#portfolio img
+    {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+#portfolio img:hover
+    {
+        width: 100%;
+        height: 100%;
+        filter: none;
+        -webkit-filter: none;
+    }
+
+    /*recommandation*/
+#recommandation
+    {
+        background-color: white;
+    }
+
+#recommandation .heading h2
+    {
+        color: #008af2;
+        text-align: center;
+        padding: 10px;
+    }
+
+#recommandation .fa
+    {
+        color: #008af2;
+        font-size: 30px;
+    }
+
+.carousel-indicators li
+    {
+        background-color: #008af2;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%; /*b4 definit w & h dabor*/
+    }
+
+.carousel-item
+    {
+        padding: 10px 10px 40px 10px;
+    }
+
+.carousel-item h3
+    {
+        color: #008af2;
+        font-style: italic;
+    }
+
+/*Footer*/
+footer
+    {
+        background-color: #333;
+        padding: 40px 20px;
+    }
+
+footer .fa
+    {
+        font-size: 25px;
+        margin: 10px;
+        color: #008af2;
+        height: 30px;
+    }
+
+footer .fa:hover
+    {
+        font-size: 27px;
+    }
+
+footer h5
+    {
+        color: white;
+        font-weight: normal;
+    }
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"><!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.min.css">   <!--glyph awesome-->
+    <title>CV | Dorgeles Koble</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top"><!--Navbar-->
+        <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="my-navbar">
+                <ul class="navbar-nav">
+                    <li><a href="#about">MOI</a></li>
+                    <li><a href="#skills">COMPETENCE</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#recommandation">RECOMMANDATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid" id="about"> <!--About-->
+        <div class="col-xs-8 col-md-4 profile-pic">
+            <img src="images/Capture.PNG" class="rounded-circle" alt="dk profile picture">
+        </div>
+        <div class="col-xs-12 heading">
+            <h1>HELLO, I'M DORGELES-DK</h1>
+            <h3>Developpeur full stack</h3>
+            <a href="docs/CV_DK.pdf" class="btn btn-outline-primary boouton-cv" role="button" target="_blank">TELECHARGER CV</a>
+        </div>
+    </section>  
+    <section id="skills"> <!--Competences-->
+        <div class="blue-divider"></div>
+        <div class="heading">
+            <h2>COMPETENCES</h2>
+        </div>
+        <div class="container">
+            <div class="row">        <!--display row influe. sur div down-->
+                <div class="col-md-6">  <!--1st col-->
+                    <div class="progress"> <!--1st pbar-->
+                        <div class="progress-bar" role="progressbar" style="width:85%">
+                            <h6>HTML 85%</h6>
+                        </div>
+                    </div>
+                    <div class="progress">  <!--2pb-->
+                        <div class="progress-bar" role="progressbar" style="width:80%">
+                            <h6>Bootstrap 80%</h6>
+                        </div>
+                    </div>     <!--3pb-->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%">
+                            <h6>JavaScript 60%</h6>
+                        </div>
+                    </div>
+                </div>  <!--E.1st col-->
+                <div class="col-md-6">  <!--2n col-->
+                    <div class="progress"><!--1pb-->
+                        <div class="progress-bar" role="progressbar" style="width:70%">
+                            <h6>Jquery 70%</h6>
+                        </div>
+                    </div>
+                    <div class="progress"> <!--2pb-->
+                        <div class="progress-bar" role="progressbar" style="width: 60%">
+                            <h6>React 65%</h6>
+                        </div>
+                    </div>
+                    <div class="progress"><!--3pb-->
+                        <div class="progress-bar" role="progressbar" style="width:75%">
+                            <h6>PHP 75%</h6>
+                        </div>
+                    </div>
+                </div>  <!--E.2n col-->
+            </div>
+        </div>
+    </section> 
+    <section id="experience"> <!--Experience pro-->
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>EXPERIENCE PROFESSIONELLE</h2>
+            </div>
+            <div class="timeline"><!--timeline-->
+                <div class="timeline-element"> <!--1st timeline elmt-->
+                    <div class="timeline-badge"><i class="fa fa-briefcase"></i></div> <!--icon-->
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>GOOGLE</h3>
+                                <h4>Developpeur web senior</h4>
+                                <p class="muted"><small><i class="fas fa-calendar-minus"></i></small> 2013-2015</p>
+                                <div class="timeline-body">
+                                    <p>Ajout de la possibilité d'écouter une traduction dans Google Translate</p>
+                                    <p>Développement de Google Suggest en mode Offline</p>
+                                    <p>Nouveau design du player de Youtube adapté au mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!--E.1st timeline elmt-->
+                <div class="timeline-element"> <!--2nd timeline elmt-->
+                    <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>FACEBOOK</h3>
+                                <h4>Développeur Web</h4>
+                                <p class="muted"><small><i class="fas fa-calendar-minus"></i></small> 2010-2013</p>
+                                <div class="timeline-body">
+                                    <p>Développement du bouton Share pour les applis Web mobile</p>
+                                    <p>Lancement automatique des vidéos en mode mute depuis la Timeline</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--E.2nd timeline elmt-->
+                <div class="timeline-element"><!--3rd timeline elmt-->
+                    <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>TWITTER</h3>
+                                <h4>Développeur Web Junior</h4>
+                                <p class="muted"><small><i class="fas fa-calendar-minus"></i></small> 2007-2010</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Création et Développement du Retweet pour l'appli Web</p>
+                                <p>Intégration des vidéos sur les applis web mobile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education"><!--Education-->
+        <div class="container">
+            <div class="heading">
+                <div class="blue-divider"></div>
+                <h2>EDUCATION</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6"> <!--1st education elmt-->
+                    <div class="education-bloc">
+                        <h5>2002 - 2006</h5>
+                        <i class="fa fa-star"></i>
+                        <h3>École Polytechnique Paris</h3>
+                        <h4>Diplôme d'ingénieur informatique</h4>
+                        <div class="blue-divider"></div>
+                        <p>Intelligence Artificielle</p>
+                        <p>Système d'informations</p>
+                    </div>
+                </div> <!--E.1st education elmt-->
+                <div class="col-md-6"><!--2nd education elmt-->
+                    <div class="education-bloc">
+                        <h5>2007</h5>
+                        <i class="fa fa-star"></i>
+                        <h3>DK Computer Club school</h3>
+                        <h4>Formatique online "developpeur full-stack"</h4>
+                        <div class="blue-divider"></div>
+                        <p>HTML/CSS,Javascript,JQuery</p>
+                        <p>Responsive Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio"> <!--Portfolio-->
+        <div class="container">
+            <div class="heading">
+                <div class="white-divider"></div>
+               <h2>PORTFOLIO</h2>
+            </div>
+                    <!--1ere ligne_comport 3 elmt-->
+            <div class="row"> 
+                <div class="col-md-4"> <!--1ere img-->
+                    <a href="#" target="_blank">
+                        <img src="images/facebook_share.png" class="img-thumbnail" alt="facebook_share">
+                    </a>
+                </div><!--E.1ere img-->
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="images/google_translate.png" class="img-thumbnail" alt="google_translate">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="images/twitter_video.png" class="img-thumbnail" alt="twitter_video">
+                    </a>
+                </div>
+            </div><!--E.1ere ligne_comport 3 elmt-->
+                        <!--2e ligne_comport 3 elmt-->
+            <div class="row"> 
+                <div class="col-md-4"><!--1ere img-->
+                    <a href="#" target="_blank">
+                        <img src="images/youtube.png" class="img-thumbnail" alt="youtube">
+                    </a>
+                </div><!--E.1ere img-->
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="images/twitter_retweet.png" class="img-thumbnail" alt="twitter_retwet">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="images/facebook_video.png" class="img-thumbnail" alt="facebook_video">
+                    </a>
+                </div>
+            </div><!--E.2e ligne_comport 3 elmt-->
+        </div>
+    </section>
+    <section id="recommandation"> <!--recommandation-->
+        <div class="container">
+            <div class="heading">
+                <div class="blue-divider"></div>
+                <h2>RECOMMANDATION</h2>
+            </div>
+                    <!--carrousel-->
+            <div id="mon-carousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">    <!--indicateur carousel-->
+                    <li data-target="#mon-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mon-carousel" data-slide-to="1"></li>
+                    <li data-target="#mon-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">     <!--elmt carousel (inner)-->
+                    <div class="carousel-item active"><!--1st carousel elmt-->
+                        <h3>"John t'es le meilleur! Merci pour tout..."</h3>
+                        <h4>Larry Page Google Co-Founder</h4>
+                    </div>  <!--E.1st carousel elmt-->
+                    <div class="carousel-item">
+                        <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
+                        <h4>Mark Zuckerberg Facebook Founder and CEO</h4>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
+                        <h4>Jack Dorsey Twitter Founder and CEO</h4>
+                    </div>
+                </div>  <!--E.elmt carousel (inner)-->
+                        <!--fleche control-->
+                <a href="#mon-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <a href="#mon-carousel" class="carousel-control-next" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <a href="#about">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <h5>© DK-Computer Club 2019 - tous droits reserves</h5>
+    </footer>
+        <!--js files-->
+    <script src="js/script.js"></script>
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script><!-- jquery file-->
+    <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script> <!--jquery cdn compile--> 
+    <script src="bootstrap/js/popper.min.js"></script><!--popper-->
+    <script src="bootstrap/js/bootstrap.min.js"></script> <!-- bootstrap js file-->
+    <script src="bootstrap/js/util.js"></script>
+</body>
+</html>
